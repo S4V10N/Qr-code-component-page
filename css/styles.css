@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+:root{
+    --WHITE: hsl(0, 0%, 100%);
+    --SLATE-300: hsl(212, 45%, 89%);
+    --SLATE-500: hsl(216, 15%, 48%);
+    --SLATE-900: hsl(218, 44%, 22%);
+    --BLACK:  hsl(0, 0%, 0%);
+}
+html{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+body{
+    font-family: "Outfit", sans-serif;
+    background-color: var(--SLATE-300);
+    padding: 1rem;
+}
+main div{
+    background-color: var(--WHITE);
+    height: 35rem;
+    border-radius: 1rem;
+    padding: 0rem 0rem 2rem 0rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+main div img{
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1.8rem;
+}
+.header{
+    color: var(--BLACK);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0rem 1.4rem;
+    margin: 1rem 0rem;
+}
+main div p{
+    text-align: center;
+    color: var(--SLATE-500);
+    padding: 0rem 1.4rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--SLATE-500);
+    height: 6rem;
+    color: var(--WHITE);
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    gap: 1rem;
+    margin: 1.6rem 0rem;
+}
+
+@media (min-width: 600px) {
+    html,body{
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        display: grid;
+        place-content: center;
+    }
+    main div{
+        background-color: var(--WHITE);
+        max-height: 35rem;
+        max-width: 360px;
+        border-radius: 1rem;
+        padding: 0rem 0rem 2rem 0rem;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+    footer div{
+        max-width: 360px;
+    }
+}
